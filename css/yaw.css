@@ -1,0 +1,20 @@
+.small {font-size:80%}
+h2 {margin-bottom: 0px;margin-top:0px;}
+h1 {margin-bottom:0px;}
+h3 {margin-top:0px;}
+.tiny {font-size: 70%}
+body {
+    background-color: #303030;
+    color: #FFFFFF;
+}
+a:visited {
+    color: #FFA500;
+}
+a {
+    color: #00FF00;
+}
+.front-post {
+    border:1px solid #DDDDDD;
+    margin:8px;
+    padding:5px;
+}

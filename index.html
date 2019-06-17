@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% include header.html %}
+    <p>Below are the three most recent posts. To see a list of all posts, go <a href="all.html">here</a>.</p>
+    
+    {% for post in site.posts limit:3%}
+    <div class="front-post">
+      <h2>{{ post.title }}</h2>
+      <div class="small">{{ post.date | date: "%F" }} <a href="{{ post.url }}">[link]</a></div>
+      {{ post.content }}
+    </div>
+    {% endfor %}
+    <div class="small">
+      <p>This site was inspired by the following quote:</p>
+      <blockquote>
+        "Thoreau says the mass of men lead lives of quiet desperation. Not programmers, though. They lead lives of really loud desperation." -<a href="https://sites.google.com/site/steveyegge2/ancient-languages-perl">Steve Yegge</a>
+      </blockquote>
+    </div>
+{% include footer.html no_index="True" %}

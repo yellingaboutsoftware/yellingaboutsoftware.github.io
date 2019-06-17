@@ -1,0 +1,7 @@
+    <p class="small">
+      {% unless include.no_index %}<a href="/">{% endunless %}Home{% unless include.no_index %}</a>{% endunless %} -
+      {% unless include.no_all %}<a href="/all.html">{% endunless %}All posts{% unless include.no_all %}</a>{% endunless %} -
+      <a href="mailto:yellingaboutsoftware@gmail.com">Contact</a> - 
+      <a href="/atom.xml">Atom feed</a> -
+      Last updated: {{ site.time | date: "%F %R %Z" }}
+    </p>

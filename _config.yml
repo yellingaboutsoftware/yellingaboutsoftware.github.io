@@ -1,0 +1,11 @@
+---
+highlighter: rouge
+name: Yelling About Software
+subtitle: A rageblog about software in the style of Web 0.9
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "post"

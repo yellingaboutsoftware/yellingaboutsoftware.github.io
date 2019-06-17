@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% include header.html %}
+    <h2>{{ page.title }}</h2>
+    <div class="small">{{ page.date | date: "%F" }}</div>
+{{content}}
+{% include footer.html %}
